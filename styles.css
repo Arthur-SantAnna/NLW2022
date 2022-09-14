@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url(./assets/background.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    background-attachment: fixed;
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    margin-top: 32px;
+    display: flex; /*poderia ter usado o display: grid*/
+    flex-direction: column;
+    gap: 24px;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #8129f5 0%, rgb(0, 183, 255) 50.52%, #43E7AD 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section h2{
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+
+section p{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #a1a1aa;
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.game-list img{
+    border-radius: 8px;
+    width: 90px;
+}
+
+.streamers-list img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+section div{
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+.game-list :hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transition: all 0.2s;
+    -webkit-filter: drop-shadow(6px 3px 3px rgba(0, 0, 0, 0.247));
+    filter: drop-shadow(6px 3px 3px rgba(0,0,0,.247));
+    filter: blur(5px);
+}
+
+.streamers-list :hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transition: all 0.2s;
+    -webkit-filter: drop-shadow(6px 3px 3px rgba(0, 0, 0, 0.247));
+    filter: drop-shadow(6px 3px 3px rgba(0,0,0,.247));
+}
+
+.social-list :hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transition: all 0.2s;
+    -webkit-filter: drop-shadow(6px 3px 3px rgba(0, 0, 0, 0.247));
+    filter: drop-shadow(6px 3px 3px rgba(0,0,0,.247));
+}

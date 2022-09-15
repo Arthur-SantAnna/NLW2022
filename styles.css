@@ -8,6 +8,14 @@ ul{
     list-style: none;
 }
 
+.setup-list{
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 32px;
+}
+
 body{
     background-image: url(./assets/background.jpg);
     background-position: top center;

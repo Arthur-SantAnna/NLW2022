@@ -30,13 +30,28 @@ body *{
 }
 
 header{
-    text-align: center;
-    margin-top: 32px;
+    /*text-align: center; usaria somente com elementos que tem propriedade de texto. 
+    div nao tem propriedades de texto*/
+    padding-top: 32px;
 }
 
-header img{
+header div{
     width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #8129f5 0%, rgb(0, 183, 255) 50.52%, #43E7AD 100%);
     border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header div:hover{
+    transform: scale(1.1);
 }
 
 main{
@@ -73,6 +88,23 @@ section ul{
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 24px;
+}
+
+section li{
+    transition: all 0.5s;
+}
+section li:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(6px 3px 3px rgba(0,0,0,.5));
+}
+
+.setup-list li{
+    transition: none;
+}
+
+.setup-list li:hover{
+    transform: none;
+    filter: none;
 }
 
 .game-list img{

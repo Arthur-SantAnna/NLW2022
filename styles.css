@@ -29,6 +29,13 @@ body *{
     line-height: 160%;
 }
 
+.credito{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: x-small;
+}
+
 header{
     /*text-align: center; usaria somente com elementos que tem propriedade de texto. 
     div nao tem propriedades de texto*/

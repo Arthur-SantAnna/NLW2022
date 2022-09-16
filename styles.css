@@ -33,6 +33,7 @@ header{
     /*text-align: center; usaria somente com elementos que tem propriedade de texto. 
     div nao tem propriedades de texto*/
     padding-top: 32px;
+    height: calc(120px + 32px);
 }
 
 header div{
@@ -43,6 +44,8 @@ header div{
     padding: 4px;
     display: flex;
     transition: transform 0.5s;
+    animation: fromTop 1s 0.3s backwards;
+
 }
 
 header div img{
@@ -122,4 +125,68 @@ section div{
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
+}
+
+/*main section{
+    animation: fromBottom 0.7s backwards;
+}*/
+
+main section:nth-child(1){
+    animation: fromLeft 1s 0s backwards;
+}
+
+main section:nth-child(2){
+    animation: fromRight 1s 0.2s backwards;
+}
+
+main section:nth-child(3){
+    animation: fromLeft 1s 0.4s backwards;
+}
+
+main section:nth-child(4){
+    animation: fromRight 1s 0.8s backwards;
+}
+
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+@keyframes fromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromRight{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
